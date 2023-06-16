@@ -34,11 +34,11 @@ You may test a Docker image from my DockerHub repository:
 - [willsenabr/fake-logger](https://hub.docker.com/repository/docker/willsenabr/fake-logger/general)
 
 ```bash
-#docker
-docker run -it --rm docker.io/willsenabr/fake-logger
+#docker with delay
+docker run -it --rm --env DELAY=5000 docker.io/willsenabr/fake-logger
 
-# podman
-podman run -it --rm docker.io/willsenabr/fake-logger
+# podman default delay
+podman run -it --rm  docker.io/willsenabr/fake-logger
 ```
 
 ![Container running](images/running.png)
@@ -62,3 +62,7 @@ MIX_ENV=prod mix release
 # starting release
 _build/prod/rel/fake_logger/bin/fake_logger start
 ```
+
+## Environment variables
+
+- **DELAY** specifies how much demand should be consumed in milliseconds.
