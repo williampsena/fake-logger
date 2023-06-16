@@ -5,6 +5,8 @@
 # is restricted to this project.
 import Config
 
-config :logger, level: String.to_atom(System.get_env("LOG_LEVEL") || "info")
+config :logger, :console,
+  format: "$time $metadata[$level] $message\n",
+  level: String.to_atom(System.get_env("LOG_LEVEL") || "info")
 
 config :fake_logger, delay: String.to_integer(System.get_env("DELAY") || "1000")

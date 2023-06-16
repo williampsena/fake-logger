@@ -6,17 +6,17 @@ defmodule FakeLogger.Message do
 
   @logger_type ~w(info warn error)a
   @message_templates [
-    "{emoji} We should have called \"{super_hero}\" if we were in trouble.",
-    "{emoji} {super_hero} has the ability to throw {super_hero_power}.",
-    "{emoji} {pokemon} is the best Pokemon to have on your squad.",
-    "{emoji} The order will be delivered to {street}.",
-    "{emoji} {color} is my favorite color.",
-    "{emoji} You must try {food}.",
-    "{emoji} My favorite pizza flavor is {pizza}.",
-    "{emoji} Don't buy {car} unless you want to spend a lot of money on repairs.",
-    "{emoji} Have you had the opportunity to try {beer}?",
-    "{emoji} {start_wars_quote}",
-    "{emoji} I'm an awesome hacker. Your IP address may be {ipv6}, no?"
+    "{emoji}  We should have called \"{super_hero}\" if we were in trouble.",
+    "{emoji}  {super_hero} has the ability to throw {super_hero_power}.",
+    "{emoji}  {pokemon} is the best Pokemon to have on your squad.",
+    "{emoji}  The order will be delivered to {street}.",
+    "{emoji}  {color} is my favorite color.",
+    "{emoji}  You must try {food}.",
+    "{emoji}  My favorite pizza flavor is {pizza}.",
+    "{emoji}  Don't buy {car} unless you want to spend a lot of money on repairs.",
+    "{emoji}  Have you had the opportunity to try {beer}?",
+    "{emoji}  {start_wars_quote}",
+    "{emoji}  I'm an awesome hacker. Your IP address may be {ipv6}, no?"
   ]
   @emojis [
     "💣",
@@ -78,7 +78,7 @@ defmodule FakeLogger.Message do
   end
 
   defp translate_message(message_template) do
-    Regex.replace(~r/{(\w+[^}])}/, message_template, fn _, message_type ->
+    Regex.replace(~r/\{(\w+)\}/, message_template, fn _, message_type ->
       translate_message_type(message_type)
     end)
   end

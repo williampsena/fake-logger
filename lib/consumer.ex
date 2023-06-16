@@ -1,4 +1,7 @@
 defmodule FakeLogger.Consumer do
+  @moduledoc """
+  The module is in responsible for consume and print fake messages.
+  """
   use GenStage
 
   def start_link(_initial) do

@@ -1,4 +1,7 @@
 defmodule FakeLogger.Producer do
+  @moduledoc """
+  The module is in responsible for producing fake messages.
+  """
   use GenStage
 
   def start_link(initial \\ []) do
