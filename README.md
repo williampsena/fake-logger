@@ -31,7 +31,7 @@ mix run --no-halt
 
 You may test a Docker image from my DockerHub repository:
 
-- [willsenabr/fake-logger] (https://hub.docker.com/repository/docker/willsenabr/fake-logger/general)
+- [willsenabr/fake-logger](https://hub.docker.com/repository/docker/willsenabr/fake-logger/general)
 
 ```bash
 #docker
