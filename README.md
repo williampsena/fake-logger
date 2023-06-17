@@ -63,6 +63,12 @@ MIX_ENV=prod mix release
 _build/prod/rel/fake_logger/bin/fake_logger start
 ```
 
+## Code Analysis and Improvements
+
+```shell
+mix credo -a
+```
+
 ## Environment variables
 
 - **DELAY** specifies how much demand should be consumed in milliseconds.

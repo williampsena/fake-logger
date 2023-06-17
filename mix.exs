@@ -36,7 +36,8 @@ defmodule FakeLogger.MixProject do
   defp deps do
     [
       {:faker, "~> 0.17"},
-      {:gen_stage, "~> 1.2.1"}
+      {:gen_stage, "~> 1.2.1"},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
 end
