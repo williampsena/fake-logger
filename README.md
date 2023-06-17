@@ -43,7 +43,9 @@ docker run -it --rm --env DELAY=5000 docker.io/willsenabr/fake-logger
 podman run -it --rm  docker.io/willsenabr/fake-logger
 ```
 
-![Container running](screencasts/docker.mp4)
+
+https://github.com/williampsena/fake-logger/assets/8755718/40a00a6b-ea24-439d-b27f-d48838161b64
+
 
 
 ## Tests
