@@ -1,5 +1,7 @@
 # FakeLogger
 
+![workflow](https://github.com/williampsena/fake-logger/actions/workflows/main.yml/badge.svg)
+
 This repository provides an application that uses Elixir GenStages to print fake logs to stdout.
 
 ## Installation
