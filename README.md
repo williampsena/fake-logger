@@ -36,7 +36,7 @@ You may test a Docker image from my DockerHub repository:
 - [willsenabr/fake-logger](https://hub.docker.com/repository/docker/willsenabr/fake-logger/general)
 
 ```bash
-#docker with delay
+# docker with delay
 docker run -it --rm --env DELAY=5000 docker.io/willsenabr/fake-logger
 
 # podman default delay
