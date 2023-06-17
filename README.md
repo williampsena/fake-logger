@@ -43,7 +43,7 @@ docker run -it --rm --env DELAY=5000 docker.io/willsenabr/fake-logger
 podman run -it --rm  docker.io/willsenabr/fake-logger
 ```
 
-![Container running](images/running.png)
+![Container running](screencasts/docker.mp4)
 
 
 ## Tests
